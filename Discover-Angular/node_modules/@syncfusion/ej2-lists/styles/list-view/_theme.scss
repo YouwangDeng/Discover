@@ -1,0 +1,70 @@
+﻿@include export-module('listview-theme') {
+  #{&}.e-listview {
+    border-color: $listview-line-color;
+    font-family: $listview-font-family;
+    font-size: $listview-font-size;
+    @at-root {
+      & .e-list-header {
+        background-color: $listview-header-bg;
+        border-color: $listview-header-border;
+        color: $listview-header-text-color;
+        display: block;
+        font-size: $listview-header-font-size;
+      }
+
+      & .e-list-header > * {
+        display: table-cell;
+      }
+
+      & .e-icons {
+        color: $listview-icon-color;
+      }
+
+      & .e-list-item {
+        background-color: $listview-background;
+        border-bottom: $listview-border-bottom solid $listview-border-bottom-color;
+        border-left: $listview-border-left solid $listview-border-left-color;
+        border-right: $listview-border-right solid $listview-border-right-color;
+        border-top: $listview-border-top solid $listview-border-top-color;
+        color: $listview-text-color;
+      }
+
+      & .e-list-item.e-hover,
+      & .e-list-item.e-hover.e-active.e-checklist {
+        background-color: $listview-item-hover-bg;
+        border-color: $listview-hover-border-color;
+        color: $listview-text-hover-color;
+      }
+
+      & .e-list-item.e-active {
+        background-color: $listview-item-active-bg;
+        color: $listview-text-active-color;
+      }
+
+      & .e-list-item.e-active.e-checklist {
+        background-color: $listview-background;
+        color: $listview-text-color;
+      }
+
+      & .e-list-item.e-focused ,
+      & .e-list-item.e-focused.e-active.e-checklist {
+        background-color: $listview-item-active-bg;
+        color: $listview-text-active-color;
+      }
+
+      & .e-list-item.e-focused .e-checkbox-wrapper .e-frame.e-check,
+      & .e-list-item.e-focused .e-css.e-checkbox-wrapper .e-frame.e-check {
+        background-color: $checkmark-bgcolor;
+        border-color: $checkmark-border-color;
+        color: $checkmark-color;
+      }
+
+      & .e-list-group-item {
+        background-color: $listview-groupheader-bg;
+        border-color: $listview-header-border;
+        color: $listview-groupheader-text-color;
+        font-size: $listview-groupheader-font-size;
+      }
+    }
+  }
+}

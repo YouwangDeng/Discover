@@ -1,0 +1,26 @@
+@include export-module('listview-icons') {
+  /*! component icons */
+  #{&}.e-listview {
+
+    .e-icon-back::before {
+      content: $listview-back-icon;
+      font-size: $listview-back-icon-font-size;
+    }
+
+    .e-icon-collapsible::before {
+      content: $listview-icon-collapsible;
+    }
+
+    &.e-rtl {
+      & .e-icon-back::before {
+        content: $listview-icon-back-rtl;
+        font-size: $listview-back-icon-font-size;
+      }
+
+      & .e-icon-collapsible::before {
+        content: $listview-icon-collapsible-rtl;
+      }
+    }
+
+  }
+}
