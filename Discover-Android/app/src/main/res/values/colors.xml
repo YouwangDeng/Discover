@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#3004aa</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="splash_background">#5707eb</color>
+    <color name="white">#ffffff</color>
+    <color name="button">#fc4d2b</color>
+    <color name="toast">#ececec</color>
+    <color name="item">#f8f8f8</color>
+    <color name="greyResult">#787878</color>
+    <color name="orange">#d65037</color>
+    <color name="not_selected_color">#d395ff</color>
+</resources>
